@@ -78,6 +78,7 @@ async function jdGlobal() {
     // await signInit()
     await cash()
     await showMsg()
+    await notify.sendNotify(`${$.name}`, `京东账号${$.index}${$.nickName}\n本次运行获得${$.score}金币，共计${$.total}金币`)
   } catch (e) {
     $.logErr(e)
   }
